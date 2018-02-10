@@ -250,7 +250,6 @@ int main(){
             displayCard(dealer.cards[i]);
             cout << ", ";
           }
-
         }
         cout << "   Score: " << dealer.score << endl;
 
