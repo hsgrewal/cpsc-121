@@ -2,9 +2,9 @@
 
 ## Harkishan Singh Grewal
 
-CPSC-121 - Programming Concepts
-January 23, 2015
-Written in C++
+CPSC-121 - Programming Concepts\\
+January 23, 2015\\
+Written in C++\\
 
 ## Programming Assignment
 
