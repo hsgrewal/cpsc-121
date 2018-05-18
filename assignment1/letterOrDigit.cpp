@@ -34,7 +34,7 @@ int main()
   }
   else
   {
-    cout << "\nThe character '" << inputCh << "' is neither a letter"
+    cout << "\nThe character '" << inputCh << "' is neither a letter "
       << "nor digit.\n\n";
   }
 

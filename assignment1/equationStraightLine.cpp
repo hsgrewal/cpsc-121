@@ -22,7 +22,7 @@ int main()
   double yIntercept;
 
   // Welcome user to program and describe what it does.
-  cout << "Welcome! Enter coordinates of two points to find the equation of "
+  cout << "Welcome! Enter coordinates of two points to find \nthe equation of "
     << "a straight line between those points.\n\n";
 
   // Ask user to input two points and store the input.
