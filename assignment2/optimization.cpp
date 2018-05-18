@@ -36,7 +36,7 @@ int main()
     height = (VOLUME / (PI*radius*radius));
     surfaceArea = 2 * PI*radius*radius + 2 * PI*radius*height;
     cost = UNIT_PRICE*surfaceArea;
-    cout << "cost:" << cost << "\ntemp-cost:" << (cost<temp) << "radius:"
+    cout << "cost:" << cost << "\ntemp-cost:" << (cost<temp) << "\nradius:"
       << radius << endl;
 
     // Find lowest cost.
