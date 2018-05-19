@@ -23,12 +23,14 @@ whitespace. Each movie record has four fields: movie name, production budget,
 domestic gross and worldwide gross. There are 103 records in total. An array
 of C++ structure is used to build the movie database from the file. The struct
 is provided below:
-  > struct Movie {
-  >   std::string name;
-  >   double budget;
-  >   double domestic_gross;
-  >   double global_gross;
-  > };
+```cpp
+struct Movie {
+  std::string name;
+  double budget;
+  double domestic_gross;
+  double global_gross;
+  };
+```
 
 ### Widget Factory
 This C++ program designs a class for a widget manufacturing plant. Assuming

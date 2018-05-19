@@ -46,7 +46,7 @@ int main()
   // Display result.
   if (index < 0)
   {
-    cout << "\nThe integer '" << targetInt << "' is not present in the"
+    cout << "\nThe integer '" << targetInt << "' is not present in the "
       << "list.\n\n";
   }
   else

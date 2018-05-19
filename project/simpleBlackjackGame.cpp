@@ -67,7 +67,7 @@ int main(){
     cout << "\nEnter number of players: ";
     cin >> numPlayers;
     while (numPlayers<0 || numPlayers>7){ // validate user input.
-      cout << "Enter number of players: ";
+      cout << "ERROR! Enter a valid (1-7) number of players: ";
       cin >> numPlayers;
     }
 
