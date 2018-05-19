@@ -55,21 +55,21 @@ total of 12 points. For another example, the player has Ace of Club and Queen
 of Heart at hand. The player would have 11 or 21 points.
 
 **Point System Associated with Each Card**
-Card    |  Point
-:------:|:-------:
-  Ace   | 1 or 11
-   2    |    2
-   3    |    3
-   4    |    4
-   5    |    5
-   6    |    6
-   7    |    7
-   8    |    8
-   9    |    9
-   10   |    10
-  Jack  |    10
-  Queen |    10
-  King  |    10
+| Card  |  Point  |
+|:-----:|:-------:|
+| Ace   | 1 or 11 |
+|  2    |    2    |
+|  3    |    3    |
+|  4    |    4    |
+|  5    |    5    |
+|  6    |    6    |
+|  7    |    7    |
+|  8    |    8    |
+|  9    |    9    |
+|  10   |    10   |
+| Jack  |    10   |
+| Queen |    10   |
+| King  |    10   |
 
 ### Stage of Game
 The simple blackjack game has the following stages from the start to end of game:
