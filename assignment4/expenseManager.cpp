@@ -46,89 +46,92 @@ int main()
     cout << "INVALID CHOICE! Enter choice.";
   }
 
-  // Open file.
-  inputFile.open("client_info.txt");
-
-  // Check if file opened.
-  if (inputFile)
+  if (choice == 5)
   {
-    // Intialize the arrays.
-    for (int i = 0; i < NUM_CLIENTS; i++)
+    cout << "You have quit the program.\n";
+  }
+  else
+  {
+    // Open file.
+    inputFile.open("client_info.txt");
+
+    // Check if file opened.
+    if (inputFile)
     {
-      inputFile >> id[i];
-      inputFile >> name[i];
-      for (int j = 0; j < NUM_EXPENSES + 1; j++)
+      // Intialize the arrays.
+      for (int i = 0; i < NUM_CLIENTS; i++)
       {
-        inputFile >> expense[i][j];
+        inputFile >> id[i];
+        inputFile >> name[i];
+        for (int j = 0; j < NUM_EXPENSES + 1; j++)
+        {
+          inputFile >> expense[i][j];
+        }
       }
-    }
 
-    // Close the file.
-    inputFile.close();
+      // Close the file.
+      inputFile.close();
 
-    // Ask user for client ID.
-    cout << "\nEnter client ID: ";
-    cin >> targetId;
-
-    // Call searchId function to find index.
-    index = searchId(id, NUM_CLIENTS, targetId);
-
-    // Validate index.
-    while (index < 0)
-    {
       // Ask user for client ID.
-      cout << "\nERROR! Enter client ID: ";
+      cout << "\nEnter client ID: ";
       cin >> targetId;
 
       // Call searchId function to find index.
       index = searchId(id, NUM_CLIENTS, targetId);
-    }
 
-    if (choice == 1)
-    {
-      displayInformation(id[index], name[index], expense[index],
-        NUM_EXPENSES, expense[index][NUM_EXPENSES]);
-    }
-    else if (choice == 2)
-    {
-      cout << "\nThe average monthly expense for the client is $"
+      // Validate index.
+      while (index < 0)
+      {
+        // Ask user for client ID.
+        cout << "\nERROR! Enter client ID: ";
+        cin >> targetId;
+
+        // Call searchId function to find index.
+        index = searchId(id, NUM_CLIENTS, targetId);
+      }
+
+      if (choice == 1)
+      {
+        displayInformation(id[index], name[index], expense[index],
+          NUM_EXPENSES, expense[index][NUM_EXPENSES]);
+      }
+      else if (choice == 2)
+      {
+        cout << "\nThe average monthly expense for the client is $"
         << computeAverageExpense(expense[index], NUM_EXPENSES)
         << endl << endl;
-    }
-    else if (choice == 3)
-    {
-      cout << "\nThe highest expense for the client was $"
+      }
+      else if (choice == 3)
+      {
+        cout << "\nThe highest expense for the client was $"
         << findMaxExpense(expense[index], NUM_EXPENSES)
         << endl << endl;
-    }
-    else if (choice == 4)
-    {
-      // Declare local variable.
-      double nextPurchase;
-
-      // Asked user for the cost of next purchase.
-      cout << "\nEnter the cost of next purchase: ";
-      cin >> nextPurchase;
-
-      if (isOverBudget(expense[index][NUM_EXPENSES], nextPurchase))
-      {
-        cout << "\nThe client's account will be over-budget with the "
-          << "next purchase.\n\n";
       }
       else
       {
-        cout << "\nThe client's account will not be over-budget with the "
+        // Declare local variable.
+        double nextPurchase;
+
+        // Asked user for the cost of next purchase.
+        cout << "\nEnter the cost of next purchase: ";
+        cin >> nextPurchase;
+
+        if (isOverBudget(expense[index][NUM_EXPENSES], nextPurchase))
+        {
+          cout << "\nThe client's account will be over-budget with the "
           << "next purchase.\n\n";
+        }
+        else
+        {
+          cout << "\nThe client's account will not be over-budget with the "
+          << "next purchase.\n\n";
+        }
       }
     }
-    else
+    else // Print out error message if file failed to open.
     {
-      cout << "You have quit the program.";
+      cout << "Error opening the file.\n";
     }
-  }
-  else // Print out error message if file failed to open.
-  {
-    cout << "Error opening the file.\n";
   }
   return 0;
 }
