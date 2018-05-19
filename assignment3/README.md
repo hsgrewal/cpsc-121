@@ -48,7 +48,7 @@ overweight. The formula to compute BMI is given below:
   > *BMI* = *weight* × 703/(*height*^2)
 
 The student database is given as follows.
-  Name  | Height | Weight
+Name    | Height | Weight
 --------|:------:|:------:
 bender  |  75.4  | 200.2
 leela   |  70.8  | 140.7
