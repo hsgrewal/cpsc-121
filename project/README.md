@@ -55,6 +55,7 @@ total of 12 points. For another example, the player has Ace of Club and Queen
 of Heart at hand. The player would have 11 or 21 points.
 
 **Point System Associated with Each Card**
+
 | Card  |  Point  |
 |:-----:|:-------:|
 | Ace   | 1 or 11 |
