@@ -84,7 +84,7 @@ int main()
  ************************************************/
 void displayMenu()
 {
-  cout << "Welcome to Area Calculator! Choose a shape to calculate"
+  cout << "Welcome to Area Calculator! Choose a shape to calculate "
     << "the area.\n\n   1. Triangle\n   2. Rectangle\n   3. Circle\n"
     << "   4. Quit\n\n";
 }
